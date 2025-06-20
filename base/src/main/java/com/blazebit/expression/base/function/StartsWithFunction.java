@@ -57,11 +57,11 @@ public class StartsWithFunction implements FunctionInvoker, Serializable {
 
     @Override
     public Object invoke(ExpressionInterpreter.Context context, DomainFunction function, DomainFunctionArguments arguments) {
-        String string = (String) arguments.getValue(1);
+        String string = (String) arguments.getValue(0);
         if (string == null) {
             return null;
         }
-        String substring = (String) arguments.getValue(0);
+        String substring = (String) arguments.getValue(1);
         if (substring == null) {
             return null;
         }

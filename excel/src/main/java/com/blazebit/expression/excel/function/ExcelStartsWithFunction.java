@@ -55,14 +55,14 @@ public class ExcelStartsWithFunction implements ExcelFunctionRenderer, Serializa
             argumentRenderers.renderArgument(sb, 2);
             sb.append(separator).append(" LEN(");
             argumentRenderers.renderArgument(sb, 1);
-            sb.append(") = ");
+            sb.append(")) = ");
             argumentRenderers.renderArgument(sb, 1);
         } else {
             sb.append("LEFT(");
             argumentRenderers.renderArgument(sb, 0);
             sb.append(separator).append(" LEN(");
             argumentRenderers.renderArgument(sb, 1);
-            sb.append(") = ");
+            sb.append(")) = ");
             argumentRenderers.renderArgument(sb, 1);
         }
     }
