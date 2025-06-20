@@ -19,6 +19,7 @@ com.blazebit.expression.base.converter.InstantToJavaUtilDateTypeConverter
 com.blazebit.expression.base.converter.InstantToLocalDateTimeTypeConverter
 com.blazebit.expression.base.converter.InstantToOffsetDateTimeTypeConverter
 com.blazebit.expression.base.converter.InstantToZonedDateTimeTypeConverter
+com.blazebit.expression.base.converter.IntegerToBigDecimalTypeConverter
 com.blazebit.expression.base.converter.LocalDateToJavaSqlDateTypeConverter
 com.blazebit.expression.base.converter.LocalTimeToJavaSqlTimeTypeConverter
 com.blazebit.expression.base.converter.LongToBigDecimalTypeConverter
