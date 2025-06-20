@@ -54,7 +54,7 @@ public class DefaultPersistenceFunctionsSerializerTest {
         WhereBuilderMock whereBuilderMock = new WhereBuilderMock();
 
         serializer.serializeTo(serializerContext, expression, whereBuilderMock);
-        Assert.assertEquals("LOCATE('Lorem ipsum dolor', 'Lorem ipsum') = 1", whereBuilderMock.predicate);
+        Assert.assertEquals("LOCATE('Lorem ipsum', 'Lorem ipsum dolor') = 1", whereBuilderMock.predicate);
     }
 
     @Test
@@ -63,7 +63,7 @@ public class DefaultPersistenceFunctionsSerializerTest {
         WhereBuilderMock whereBuilderMock = new WhereBuilderMock();
 
         serializer.serializeTo(serializerContext, expression, whereBuilderMock);
-        Assert.assertEquals("LOCATE('Lorem ipsum dolor', 'Lorem ipsum') = 1", whereBuilderMock.predicate);
+        Assert.assertEquals("LOCATE('Lorem ipsum', 'Lorem ipsum dolor') = 1", whereBuilderMock.predicate);
     }
 
     private Expression createPredicateExpression(String expressionString) {

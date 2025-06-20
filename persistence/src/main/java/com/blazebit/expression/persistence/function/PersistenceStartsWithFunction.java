@@ -48,9 +48,9 @@ public class PersistenceStartsWithFunction implements PersistenceFunctionRendere
     @Override
     public void render(DomainFunction function, DomainType returnType, PersistenceDomainFunctionArgumentRenderers argumentRenderers, StringBuilder sb, PersistenceExpressionSerializer serializer) {
         sb.append("LOCATE(");
-        argumentRenderers.renderArgument(sb, 0);
-        sb.append(", ");
         argumentRenderers.renderArgument(sb, 1);
+        sb.append(", ");
+        argumentRenderers.renderArgument(sb, 0);
         sb.append(')');
         if (argumentRenderers.assignedArguments() > 2) {
             sb.append(" = ");
